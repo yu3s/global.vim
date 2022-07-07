@@ -32,7 +32,7 @@ enddef
 #	endif
 #endfunction
 
-def GtagsCscope_GtagsRoot()
+def GtagsCscope_GtagsRoot(): string
     var cmd = global_command .. " -pq"
     var cmd_output = system(cmd)
     if v:shell_error != 0
