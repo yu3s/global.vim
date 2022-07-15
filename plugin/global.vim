@@ -51,7 +51,7 @@ def g:GtagsCscope()
 enddef
 
 def GtagsReSetCscope()
-    var cmd = "cd " .. fnamemodify(expand('%'), ":p:h") .. ";" .. s:global_command .. " -pq"
+    var cmd = "cd " .. fnamemodify(expand('%'), ":p:h") .. ";" .. global_command .. " -pq"
     var cmd_output = system(cmd)
     if v:shell_error != 0
         return
